@@ -16,10 +16,12 @@ internal sealed class EntitySpawnerManager : MonoBehaviour
     public void StartNewWave()
     {
         int _entityCount = Random.Range(2, 20);
+        float _range = Random.Range(5f, 10f);
 
         for (int i = 0; i < _entityCount; i++)
         {
-            Instantiate(EnemyTemporaryPrefab, new Vector2((Mathf.Cos(Random.Range(0f, 360f))), (Mathf.Sin(Random.Range(0f, 360f)))), Quaternion.identity);
+            float _angle = Random.Range(0, Mathf.PI * 2);
+            Instantiate(EnemyTemporaryPrefab, new Vector2((Mathf.Cos(_angle)), (Mathf.Sin(_angle))) * _range, Quaternion.identity);
         }
     }
 }
