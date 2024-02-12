@@ -23,14 +23,15 @@ internal class EndlessBackground : MonoBehaviour
     {
         foreach (Transform _bg in _backgrounds)
         {
-            if (_bg.position.x < _player.position.x - 9)
-                _bg.position = new Vector3(_bg.position.x - 27, _bg.position.y, _bg.position.z);
-            if (_bg.position.x > _player.position.x - 9)
+            if (_bg.position.x < _player.position.x - 13.5f)
                 _bg.position = new Vector3(_bg.position.x + 27, _bg.position.y, _bg.position.z);
-            if (_bg.position.y < _player.position.y + 9)
+            if (_bg.position.x > _player.position.x + 13.5f)
+                _bg.position = new Vector3(_bg.position.x - 27, _bg.position.y, _bg.position.z);
+            if (_bg.position.y < _player.position.y - 13.5f)
                 _bg.position = new Vector3(_bg.position.x, _bg.position.y + 27, _bg.position.z);
-            if (_bg.position.y > _player.position.y + 9)
+            if (_bg.position.y > _player.position.y + 13.5f)
                 _bg.position = new Vector3(_bg.position.x, _bg.position.y - 27, _bg.position.z);
+
         }
     }
 }
