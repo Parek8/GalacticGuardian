@@ -3,6 +3,7 @@ using UnityEngine;
 internal class EndlessBackground : MonoBehaviour
 {
     [field: SerializeField] Transform BackgroundParent;
+    [field: SerializeField] float TileSize = 9;
 
     List<Transform> _backgrounds = new();
     Camera _mainCamera;
@@ -23,15 +24,18 @@ internal class EndlessBackground : MonoBehaviour
     {
         foreach (Transform _bg in _backgrounds)
         {
-            if (_bg.position.x < _player.position.x - 13.5f)
-                _bg.position = new Vector3(_bg.position.x + 27, _bg.position.y, _bg.position.z);
-            if (_bg.position.x > _player.position.x + 13.5f)
-                _bg.position = new Vector3(_bg.position.x - 27, _bg.position.y, _bg.position.z);
-            if (_bg.position.y < _player.position.y - 13.5f)
-                _bg.position = new Vector3(_bg.position.x, _bg.position.y + 27, _bg.position.z);
-            if (_bg.position.y > _player.position.y + 13.5f)
-                _bg.position = new Vector3(_bg.position.x, _bg.position.y - 27, _bg.position.z);
+            if (_bg.position.x < _player.position.x - GetDifference())
+                _bg.position = new Vector3(_bg.position.x + GetStep(), _bg.position.y, _bg.position.z);
+            if (_bg.position.x > _player.position.x + GetDifference())
+                _bg.position = new Vector3(_bg.position.x - GetStep(), _bg.position.y, _bg.position.z);
+            if (_bg.position.y < _player.position.y - GetDifference())
+                _bg.position = new Vector3(_bg.position.x, _bg.position.y + GetStep(), _bg.position.z);
+            if (_bg.position.y > _player.position.y + GetDifference())
+                _bg.position = new Vector3(_bg.position.x, _bg.position.y - GetStep(), _bg.position.z);
 
         }
     }
+
+    private float GetDifference() => ((TileSize) + (TileSize/2));
+    private float GetStep() => (3 * TileSize);
 }
