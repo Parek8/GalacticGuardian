@@ -4,6 +4,9 @@ using UnityEngine.SceneManagement;
 
 internal sealed class MainMenuManager : MonoBehaviour
 {
+    [field: SerializeField] LoadingHandler Loader;
+
+
     private static MainMenuManager _mainMenuManagerInstance;
     internal static MainMenuManager MainMenuManagerInstance => _mainMenuManagerInstance;
 
@@ -13,12 +16,12 @@ internal sealed class MainMenuManager : MonoBehaviour
             _mainMenuManagerInstance = this;
     }
 
-    public static void NewGame()
+    public void NewGame()
     {
-        SceneManager.LoadScene("Tutorial");
+        Loader.Load("Tutorial");
     }
 
-    public static void Exit()
+    public void Exit()
     {
         Application.Quit();
         //Exit the editor playmode -> checking, if you're using UNITY_EDITOR

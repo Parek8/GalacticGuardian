@@ -6,6 +6,7 @@ internal sealed class TutorialManager : MonoBehaviour
 {
     [field: SerializeField] Image FilledCircle;
     [field: SerializeField] float CircleFillLimit;
+    [field: SerializeField] LoadingHandler Loader;
 
 
     float _filledAmount;
@@ -20,7 +21,7 @@ internal sealed class TutorialManager : MonoBehaviour
         if (_filledAmount < CircleFillLimit)
             UpdateCircleFillAmount();
         else
-            SceneManager.LoadScene("Overworld");
+            Loader.Load("Overworld");
         
     }
 
