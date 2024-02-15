@@ -31,7 +31,7 @@ public class EnemyMovement : MonoBehaviour
     {
         _dir = _pTransform.position - transform.position;
         _dot = Vector2.Dot(transform.up, _dir.normalized);
-        float angle = Vector2.Angle(transform.up, _dir);
+        float angle = Vector2.Angle(transform.up, _dir * _stats.RotationSpeed);
         Vector3 rotAxis = Vector3.Cross(transform.up, _dir);
 
         int cw = 1;
@@ -43,6 +43,7 @@ public class EnemyMovement : MonoBehaviour
         if(_dot > 0.38f && _dot <= 1 && _dir.magnitude < _visibleDistance)
         {
             transform.Rotate(0, 0, angle * cw * _stats.RotationSpeed);
+            //transform.rotation = Quaternion.Euler(Vector3.RotateTowards(transform.up, _dir, angle * cw, _stats.RotationSpeed));
         }
     }
 
