@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BulletPrefab: {fileID: 8470326358687384243, guid: 33607f27cf7cac2909e378f232e98a01, type: 3}
-  BulletSpawnPoint: {fileID: 1228800529}
+  BulletSpawnPoint: {fileID: 0}
 --- !u!114 &65326395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1538,11 +1538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
---- !u!1 &1228800528
-=======
 --- !u!1 &1189180852
->>>>>>> origin/AdamBranch
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1550,46 +1546,24 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD
   - component: {fileID: 1228800529}
+  - component: {fileID: 1189180856}
+  - component: {fileID: 1189180854}
+  - component: {fileID: 1189180855}
   m_Layer: 0
   m_Name: ProjectileSpawnPosition
-=======
-  - component: {fileID: 1189180853}
-  - component: {fileID: 1189180856}
-  - component: {fileID: 1189180855}
-  - component: {fileID: 1189180854}
-  m_Layer: 5
-  m_Name: Button
->>>>>>> origin/AdamBranch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD
---- !u!4 &1228800529
-Transform:
-=======
 --- !u!224 &1189180853
 RectTransform:
->>>>>>> origin/AdamBranch
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 1228800528}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.05, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 65326397}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
-  m_GameObject: {fileID: 1189180852}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -1814,7 +1788,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df2fc785fa5fe594a8535ce2146a93ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
->>>>>>> origin/AdamBranch
+--- !u!1 &1228800528
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1189180853}
+  m_Layer: 0
+  m_Name: 
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1228800529
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189180852}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 65326397}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1234034029
 GameObject:
   m_ObjectHideFlags: 0
@@ -3088,10 +3096,7 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 1566452643}
   - {fileID: 1898906958}
-<<<<<<< HEAD
   - {fileID: 65326397}
-=======
   - {fileID: 1199092302}
->>>>>>> origin/AdamBranch
   - {fileID: 1234034033}
   - {fileID: 788113678}
