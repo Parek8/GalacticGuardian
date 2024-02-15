@@ -11,7 +11,6 @@ internal class EntityStats : MonoBehaviour
     [field: SerializeField] internal float MinimalDamageTaken {get; private set;} = 1;
     [field: Header("Shoot Parameters")]
     [field: SerializeField] internal float ShootCooldown {get; private set;} = 1;
-    [field: SerializeField] internal float ShootSpeed {get; private set;} = 1;
     float _currentHp;
 
     private void Start() 

@@ -57,10 +57,12 @@
   <ItemGroup>
     <Compile Include="Assets/Scripts/Entities/Player/PlayerMovement.cs" />
     <Compile Include="Assets/Scripts/Managers/TutorialManager.cs" />
+    <Compile Include="Assets/Scripts/Entities/Player/PlayerAttack.cs" />
     <Compile Include="Assets/Scripts/Managers/GameManager.cs" />
     <Compile Include="Assets/Scripts/Loading/LoadingHandler.cs" />
     <Compile Include="Assets/Scripts/Background/EndlessBackground.cs" />
     <Compile Include="Assets/Scripts/Entities/EntityStats.cs" />
+    <Compile Include="Assets/Scripts/Entities/Projectiles/ProjectileBehavior.cs" />
     <Compile Include="Assets/Scripts/Entities/Player/PlayerBehaviour.cs" />
     <Compile Include="Assets/Scripts/MainMenu/ButtonHover.cs" />
     <Compile Include="Assets/Scripts/Managers/MainMenuManager.cs" />
