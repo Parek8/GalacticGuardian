@@ -47,3 +47,6 @@ TagManager:
   - name: ForegroundLayer
     uniqueID: 4107257413
     locked: 0
+  - name: UILayer
+    uniqueID: 1058599387
+    locked: 0
