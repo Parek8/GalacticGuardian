@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Loading\LoadingHandler.cs" />
     <Compile Include="Assets\Scripts\Background\EndlessBackground.cs" />
+    <Compile Include="Assets\Scripts\WinMenu\WinMenuManager.cs" />
     <Compile Include="Assets\Scripts\Entities\EntityStats.cs" />
     <Compile Include="Assets\Scripts\Entities\Projectiles\ProjectileBehavior.cs" />
     <Compile Include="Assets\Scripts\MainMenu\ButtonHover.cs" />
