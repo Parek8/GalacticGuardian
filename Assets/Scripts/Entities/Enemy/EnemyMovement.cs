@@ -6,17 +6,16 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    Rigidbody2D _rb;
     Transform _pTransform;
     Vector2 _dir = Vector2.zero;
     Vector2 _lookAxis = Vector2.up;
     EntityStats _stats;
     float _dot;
     [field: SerializeField] float _visibleDistance = 25;
+
     // Start is called before the first frame update
     void Start()
     {
-        _rb = GetComponent<Rigidbody2D>();
         _pTransform = GameManager.GameManagerInstance.PlayerTransform;
         _stats = gameObject.GetComponent<EntityStats>();
     }
@@ -49,7 +48,7 @@ public class EnemyMovement : MonoBehaviour
 
     private void MoveToTarget()
     {
-        if (_dot > 0.38f && _dot <= 1 && Vector2.Distance(transform.position, _pTransform.position) < _visibleDistance && Vector2.Distance(transform.position, _pTransform.position) > 1f)
+        if (_dot > 0.38f && Vector2.Distance(transform.position, _pTransform.position) < _visibleDistance && Vector2.Distance(transform.position, _pTransform.position) > 1f)
             transform.position = Vector2.MoveTowards(transform.position, _pTransform.position, Time.deltaTime * _stats.MovementSpeed * Time.deltaTime);
 
     }
