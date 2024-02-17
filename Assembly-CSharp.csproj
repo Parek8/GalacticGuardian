@@ -65,7 +65,9 @@
     <Compile Include="Assets/Scripts/Entities/EntityStats.cs" />
     <Compile Include="Assets/Scripts/Entities/Enemy/EnemyMovement.cs" />
     <Compile Include="Assets/Scripts/Entities/Projectiles/ProjectileBehavior.cs" />
+    <Compile Include="Assets/Scripts/Entities/Drops/DropBehaviour.cs" />
     <Compile Include="Assets/Scripts/Entities/Player/PlayerBehaviour.cs" />
+    <Compile Include="Assets/Scripts/Entities/Drops/Currency.cs" />
     <Compile Include="Assets/Scripts/MainMenu/ButtonHover.cs" />
     <Compile Include="Assets/Scripts/Managers/MainMenuManager.cs" />
     <Compile Include="Assets/Scripts/Managers/EntitySpawnerManager.cs" />

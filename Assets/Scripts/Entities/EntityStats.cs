@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 [RequireComponent(typeof(Collider2D))]
 internal class EntityStats : MonoBehaviour
@@ -11,6 +12,8 @@ internal class EntityStats : MonoBehaviour
     [field: SerializeField] internal float Defense {get; private set;} = 1;
     [field: SerializeField] internal float MaxHealthPoints {get; private set;} = 1;
     [field: SerializeField] internal float MinimalDamageTaken {get; private set;} = 1;
+    [field: SerializeField] internal List<DropBehaviour> DroppedCurrencies { get; private set; } = new();
+
     [field: Header("Shoot Parameters")]
     [field: SerializeField] internal float ShootCooldown {get; private set;} = 1;
     float _currentHp;
@@ -48,6 +51,11 @@ internal class EntityStats : MonoBehaviour
 
     private void Die()
     {
+        foreach (DropBehaviour _drop in DroppedCurrencies)
+        {
+            if (Random.Range(0, 1f) >= _drop.DroppedCurrency.SpawnChance)
+                Instantiate(_drop.gameObject);
+        }
         // IOBSERVER WILL SEND UPDATE ABOUT DEATH
         Destroy(gameObject);
     }
