@@ -2,8 +2,10 @@ using UnityEngine;
 using System.Collections.Generic;
 
 [RequireComponent(typeof(Collider2D))]
-internal class EntityStats : MonoBehaviour
+internal class EntityStats : MonoBehaviour, IDeathObserver
 {
+
+    #region Stats
     [field: Header("Entity Parameters")]
     [field: SerializeField] internal float MovementSpeed {get; private set;} = 1; 
     [field: SerializeField] internal float BoostMultiplier {get; private set;} = 5; 
@@ -16,6 +18,12 @@ internal class EntityStats : MonoBehaviour
 
     [field: Header("Shoot Parameters")]
     [field: SerializeField] internal float ShootCooldown {get; private set;} = 1;
+    #endregion
+
+    #region InterfaceProperties
+    List<ISubscriber> IDeathObserver.subscribers { get; set; }
+    #endregion
+
     float _currentHp;
     bool _isBoosted = false;
     private void Start() 
@@ -56,7 +64,26 @@ internal class EntityStats : MonoBehaviour
             if (Random.Range(0, 1f) >= _drop.DroppedCurrency.SpawnChance)
                 Instantiate(_drop.gameObject);
         }
-        // IOBSERVER WILL SEND UPDATE ABOUT DEATH
+
+        ((IDeathObserver)this).Alert();
         Destroy(gameObject);
     }
+
+    #region InterfaceImplementations
+    void IDeathObserver.Subscribe(ISubscriber subscriber)
+    {
+        ((IDeathObserver)this).subscribers.Add(subscriber);
+    }
+
+    void IDeathObserver.Unsubscribe(ISubscriber subscriber)
+    {
+        ((IDeathObserver)this).subscribers.Remove(subscriber);
+    }
+
+    void IDeathObserver.Alert()
+    {
+        foreach(ISubscriber sub in ((IDeathObserver)this).subscribers)
+            sub.Alert();
+    }
+    #endregion
 }

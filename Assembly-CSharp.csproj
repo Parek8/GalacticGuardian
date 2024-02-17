@@ -60,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Entities\Enemy\EnemyBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Entities\ISubscriber.cs" />
     <Compile Include="Assets\Scripts\Entities\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Managers\TutorialManager.cs" />
     <Compile Include="Assets\Scripts\Entities\Player\PlayerAttack.cs" />
@@ -68,6 +69,7 @@
     <Compile Include="Assets\Scripts\Loading\LoadingHandler.cs" />
     <Compile Include="Assets\Scripts\Background\EndlessBackground.cs" />
     <Compile Include="Assets\Scripts\WinMenu\WinMenuManager.cs" />
+    <Compile Include="Assets\Scripts\Entities\IDeathObserver.cs" />
     <Compile Include="Assets\Scripts\Entities\EntityStats.cs" />
     <Compile Include="Assets\Scripts\Entities\Enemy\EnemyMovement.cs" />
     <Compile Include="Assets\Scripts\Entities\Enemy\EnemyRangedAttack.cs" />
