@@ -6,12 +6,14 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
+    [field: SerializeField] float _visibleDistance = 25;
+    internal bool Agro => _agro;
     Transform _pTransform;
     Vector2 _dir = Vector2.zero;
     Vector2 _lookAxis = Vector2.up;
     EntityStats _stats;
     float _dot;
-    [field: SerializeField] float _visibleDistance = 25;
+    bool _agro = false;
 
     // Start is called before the first frame update
     void Start()
@@ -50,7 +52,12 @@ public class EnemyMovement : MonoBehaviour
     private void MoveToTarget()
     {
         if (_dot > 0.38f && Vector2.Distance(transform.position, _pTransform.position) < _visibleDistance && Vector2.Distance(transform.position, _pTransform.position) > 1f)
+        {
+            _agro = true;
             transform.position = Vector2.MoveTowards(transform.position, _pTransform.position, Time.deltaTime * _stats.MovementSpeed * Time.deltaTime);
+        }
+        else
+            _agro = false;
 
     }
 }
