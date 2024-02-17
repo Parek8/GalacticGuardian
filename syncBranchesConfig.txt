@@ -1,0 +1,4 @@
+originName=origin
+baseBranch=dev
+branchesToPullFromBase=(ficial  )
+pathToRepo=/home/petr/Plocha/Unity/GalacticGuardian
