@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6283097216002330354}
   - component: {fileID: 2004674933565715311}
   - component: {fileID: 6843242649108510429}
+  - component: {fileID: -6638982347009929733}
   m_Layer: 6
   m_Name: BaseBullet
   m_TagString: Untagged
@@ -163,3 +164,24 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.49999997
+--- !u!114 &-6638982347009929733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8470326358687384243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d16caf9fc35893748b8870d09d149bdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <MovementSpeed>k__BackingField: 0
+  <BoostMultiplier>k__BackingField: 0
+  <RotationSpeed>k__BackingField: 0
+  <AttackDamage>k__BackingField: 1
+  <Defense>k__BackingField: 1
+  <MaxHealthPoints>k__BackingField: 1
+  <MinimalDamageTaken>k__BackingField: 1
+  <DroppedCurrencies>k__BackingField: []
+  <ShootCooldown>k__BackingField: 999
