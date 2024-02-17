@@ -37,5 +37,10 @@ internal class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.E) || Input.GetKey(KeyCode.RightArrow))
             transform.Rotate(new Vector3(0, 0, -1 * _playerStats.RotationSpeed));
 
+        if (Input.GetKey(KeyCode.LeftShift))
+            _playerStats.BoostMovementSpeed();
+        else
+            _playerStats.RevertMovementSpeed();
+
     }
 }
