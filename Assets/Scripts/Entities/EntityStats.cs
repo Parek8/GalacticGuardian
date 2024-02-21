@@ -38,6 +38,13 @@ internal class EntityStats : MonoBehaviour, IDeathObserver
         if (_currentHp <= 0)
             Die();
     }
+    void Heal(float amount)
+    {
+        if (_currentHp < MaxHealthPoints)
+            _currentHp += amount;
+
+        MaxHealthPoints += amount / 10;
+    }
 
     internal void BoostMovementSpeed()
     {
@@ -69,6 +76,40 @@ internal class EntityStats : MonoBehaviour, IDeathObserver
         Destroy(gameObject);
     }
 
+    internal void IncreaseStat(StatType type, float value)
+    {
+        switch (type)
+        {
+            case StatType.AttackDamage:
+                AttackDamage += value;
+            break;
+
+            case StatType.BoostMultiplier:
+                BoostMultiplier += value;
+                break;
+
+            case StatType.RotationSpeed:
+                RotationSpeed += value;
+                break;
+
+            case StatType.MovementSpeed:
+                MovementSpeed += value;
+                break;
+
+            case StatType.Defense:
+                Defense += value;
+                break;
+
+            case StatType.MaxHealthPoints:
+                Heal(value);
+                break;
+
+            default:
+                Debug.LogWarning("StatType not found!");
+            break;
+        }
+    }
+
     #region InterfaceImplementations
     void IDeathObserver.Subscribe(ISubscriber subscriber)
     {
@@ -86,4 +127,13 @@ internal class EntityStats : MonoBehaviour, IDeathObserver
             sub.Alert();
     }
     #endregion
+}
+internal enum StatType
+{
+    MovementSpeed,
+    BoostMultiplier,
+    RotationSpeed,
+    AttackDamage,
+    Defense,
+    MaxHealthPoints
 }
