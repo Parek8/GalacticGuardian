@@ -21,7 +21,7 @@ internal class EntityStats : MonoBehaviour, IDeathObserver
     #endregion
 
     #region InterfaceProperties
-    List<ISubscriber> IDeathObserver.subscribers { get; set; }
+    List<ISubscriber> IDeathObserver.subscribers { get; set; } = new();
     #endregion
 
     float _currentHp;
