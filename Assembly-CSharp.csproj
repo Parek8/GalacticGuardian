@@ -61,6 +61,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Entities\Enemy\EnemyBehaviour.cs" />
     <Compile Include="Assets\Scripts\Entities\ISubscriber.cs" />
+    <Compile Include="Assets\Scripts\GameOver\GameOverMenu.cs" />
     <Compile Include="Assets\Scripts\Entities\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Managers\TutorialManager.cs" />
     <Compile Include="Assets\Scripts\Entities\Player\PlayerAttack.cs" />
