@@ -50,6 +50,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2f323cf7abd8d43a015a10b3219acc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _pTransform: {fileID: 0}
   _visibleDistance: 25
 --- !u!114 &1469815385885404995
 MonoBehaviour:
@@ -63,7 +64,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d16caf9fc35893748b8870d09d149bdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <MovementSpeed>k__BackingField: 36
+  <MovementSpeed>k__BackingField: 1
   <BoostMultiplier>k__BackingField: 5
   <RotationSpeed>k__BackingField: 1.2
   <AttackDamage>k__BackingField: 1
@@ -75,7 +76,7 @@ MonoBehaviour:
   - {fileID: 3633874271622342539, guid: e59017a413299b344bd8a74624575fc3, type: 3}
   - {fileID: 3633874271622342539, guid: e59017a413299b344bd8a74624575fc3, type: 3}
   - {fileID: 3633874271622342539, guid: e59017a413299b344bd8a74624575fc3, type: 3}
-  <ShootCooldown>k__BackingField: 1
+  <ShootCooldown>k__BackingField: 1.5
 --- !u!95 &6394485347048515585
 Animator:
   serializedVersion: 5

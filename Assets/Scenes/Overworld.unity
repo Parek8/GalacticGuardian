@@ -741,14 +741,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1469815385885404995, guid: 12b6e0fc564e4544cb6ca59b9821dd5f, type: 3}
-      propertyPath: <MovementSpeed>k__BackingField
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1469815385885404995, guid: 12b6e0fc564e4544cb6ca59b9821dd5f, type: 3}
-      propertyPath: <ShootCooldown>k__BackingField
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 1639400429067200599, guid: 12b6e0fc564e4544cb6ca59b9821dd5f, type: 3}
       propertyPath: m_Name
       value: BasicEnemy
