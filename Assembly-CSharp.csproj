@@ -1,19 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <!-- Generated file, do not modify, your changes will be overwritten (use AssetPostprocessor.OnGeneratedCSProject) -->
   <PropertyGroup>
     <LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
+    <ProjectGuid>{6E8784B7-9003-2236-7D42-191B46440B0D}</ProjectGuid>
     <ProjectGuid>{6E8784B7-9003-2236-7D42-191B46440B0D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -44,16 +53,25 @@
     <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
     <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <PropertyGroup>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
     <UnityProjectGeneratorVersion>2.0.21</UnityProjectGeneratorVersion>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
+    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2022.3.11f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
+    <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
@@ -100,9 +118,31 @@
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
@@ -110,83 +150,113 @@
     </Reference>
     <Reference Include="UnityEngine.ARModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.ARModule.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.ARModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.AccessibilityModule.dll</HintPath>
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.AccessibilityModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AndroidJNIModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.AndroidJNIModule.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.AndroidJNIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.AnimationModule.dll</HintPath>
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.AnimationModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AssetBundleModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.AssetBundleModule.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.AssetBundleModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AudioModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.AudioModule.dll</HintPath>
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.AudioModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ClothModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClothModule.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClothModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterInputModule.dll</HintPath>
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterInputModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ClusterRendererModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterRendererModule.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterRendererModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ContentLoadModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.ContentLoadModule.dll</HintPath>
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.ContentLoadModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.CrashReportingModule.dll</HintPath>
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.CrashReportingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.DSPGraphModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.DSPGraphModule.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.DSPGraphModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.DirectorModule.dll</HintPath>
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.DirectorModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.GIModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.GIModule.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.GIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.GameCenterModule.dll</HintPath>
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.GameCenterModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.GridModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.GridModule.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.GridModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.HotReloadModule.dll</HintPath>
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.HotReloadModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.IMGUIModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.IMGUIModule.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.IMGUIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.ImageConversionModule.dll</HintPath>
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.ImageConversionModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.InputModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.InputModule.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.InputModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.InputLegacyModule.dll</HintPath>
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.InputLegacyModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.JSONSerializeModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.JSONSerializeModule.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.JSONSerializeModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.LocalizationModule.dll</HintPath>
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.LocalizationModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ParticleSystemModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.ParticleSystemModule.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.ParticleSystemModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.PerformanceReportingModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.PerformanceReportingModule.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.PerformanceReportingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.PhysicsModule.dll</HintPath>
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.PhysicsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Physics2DModule">
