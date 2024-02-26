@@ -424,6 +424,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameOverCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4632286923066030896, guid: 2fd4cd8703c71b8409f48b2201bba695, type: 3}
+      propertyPath: m_text
+      value: Menu
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
