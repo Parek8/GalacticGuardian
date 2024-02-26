@@ -75,11 +75,13 @@
     <Compile Include="Assets\Scripts\Entities\Enemy\EnemyMovement.cs" />
     <Compile Include="Assets\Scripts\Entities\Projectiles\ProjectileBehavior.cs" />
     <Compile Include="Assets\Scripts\Entities\Drops\DropBehaviour.cs" />
+    <Compile Include="Assets\Scripts\UpgradeUI\Card.cs" />
     <Compile Include="Assets\Scripts\Entities\Player\PlayerBehaviour.cs" />
     <Compile Include="Assets\Scripts\Entities\Drops\Currency.cs" />
     <Compile Include="Assets\Scripts\MainMenu\ButtonHover.cs" />
     <Compile Include="Assets\Scripts\Managers\MainMenuManager.cs" />
     <Compile Include="Assets\Scripts\Managers\EntitySpawnerManager.cs" />
+<<<<<<< HEAD
 =======
     <Compile Include="Assets/Scripts/Entities/Enemy/EnemyBehaviour.cs" />
     <Compile Include="Assets/Scripts/Entities/ISubscriber.cs" />
@@ -101,6 +103,9 @@
     <Compile Include="Assets/Scripts/Managers/MainMenuManager.cs" />
     <Compile Include="Assets/Scripts/Managers/EntitySpawnerManager.cs" />
 >>>>>>> origin/PetrBranch
+=======
+    <Compile Include="Assets\Scripts\UpgradeUI\CardUI.cs" />
+>>>>>>> 2c219b64bf8c87342b9c8d8c81115b6bcc3a495b
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
