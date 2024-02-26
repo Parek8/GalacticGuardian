@@ -2713,7 +2713,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 660939653}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
 --- !u!1001 &3549146529294883818
 --- !u!1001 &6807129273623453359
 PrefabInstance:
@@ -2862,7 +2861,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 535764853}
     m_AddedComponents: []
-<<<<<<< HEAD
   m_SourcePrefab: {fileID: 100100000, guid: 3a6fc6f59f2ea19488f40bf6aeee34af, type: 3}
 --- !u!1001 &4983497104444406536
 PrefabInstance:
@@ -2925,9 +2923,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6ec9193183cff4c9e300b96e89343b, type: 3}
-=======
   m_SourcePrefab: {fileID: 100100000, guid: 9ee11f1b48838471ea339a17aeb50cb5, type: 3}
-<<<<<<< HEAD
 --- !u!4 &6807129273623453360 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3619770519452838549, guid: 9ee11f1b48838471ea339a17aeb50cb5, type: 3}
@@ -2990,11 +2986,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd791515beaad7133aa22c2a39f057e2, type: 3}
-=======
->>>>>>> origin/PetrBranch
->>>>>>> origin/AdamBranch
-=======
->>>>>>> 811934db2afc3afe8b3d04722a67fa50b2b0f487
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -3008,12 +2999,6 @@ SceneRoots:
   - {fileID: 1199092302}
   - {fileID: 1234034033}
   - {fileID: 788113678}
-<<<<<<< HEAD
   - {fileID: 8644196683939809803}
-=======
   - {fileID: 668027265}
-<<<<<<< HEAD
   - {fileID: 4983497104444406536}
->>>>>>> origin/AdamBranch
-=======
->>>>>>> 811934db2afc3afe8b3d04722a67fa50b2b0f487
