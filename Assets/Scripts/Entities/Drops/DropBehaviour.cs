@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DropBehaviour : MonoBehaviour
@@ -19,7 +17,7 @@ public class DropBehaviour : MonoBehaviour
 
         if (Vector2.Distance(transform.position, _playerTransform.position) <= 0.3f)
         {
-            // ADD TO PLAYER
+            GameManager.GameManagerInstance.PlayerStats.PickUpCopper();
             Destroy(gameObject);
         }
     }

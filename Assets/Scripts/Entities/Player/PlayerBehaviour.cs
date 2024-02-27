@@ -1,9 +1,10 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(PlayerMovement))]
-[RequireComponent(typeof(EntityStats))]
+[RequireComponent(typeof(PlayerStats))]
 internal class PlayerBehaviour : MonoBehaviour
 {
     [field: SerializeField] private GameObject BulletPrefab;
@@ -11,16 +12,16 @@ internal class PlayerBehaviour : MonoBehaviour
     [field: SerializeField] private Image CooldownImage;
     [field: SerializeField] private Image GreenHPImage;
     [field: SerializeField] private Image RedHPImage;
+    [field: SerializeField] private TMP_Text CopperText;
 
 
-    EntityStats _playerStats;
+    PlayerStats _playerStats;
     float _currentShootCooldown;
     float _maxShootCooldown;
-    bool _bulletUpgraded = false;
 
     void Start()
     {
-        _playerStats = GetComponent<EntityStats>();
+        _playerStats = GetComponent<PlayerStats>();
         _maxShootCooldown = _playerStats.ShootCooldown;
         _currentShootCooldown = _maxShootCooldown;
 
@@ -38,6 +39,7 @@ internal class PlayerBehaviour : MonoBehaviour
     private void UpdateUI()
     {
         UpdateCooldown();
+        UpdateCopperUI();
     }
 
     private void UpdateCooldown()
@@ -60,6 +62,8 @@ internal class PlayerBehaviour : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         RedHPImage.fillAmount = _filledAmount;
     }
+
+    private void UpdateCopperUI() => CopperText.text = $"{_playerStats.CopperCount}x";
 
     private void Shoot()
     {
