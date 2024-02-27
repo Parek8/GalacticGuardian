@@ -22,15 +22,17 @@ internal class EndlessBackground : MonoBehaviour
     {
         foreach (Transform _bg in _backgrounds)
         {
-            if (_bg.position.x < _player.position.x - GetDifference())
-                _bg.position = new Vector2(_bg.position.x + GetStep(), _bg.position.y);
-            if (_bg.position.x > _player.position.x + GetDifference())
-                _bg.position = new Vector2(_bg.position.x - GetStep(), _bg.position.y);
-            if (_bg.position.y < _player.position.y - GetDifference())
-                _bg.position = new Vector2(_bg.position.x, _bg.position.y + GetStep());
-            if (_bg.position.y > _player.position.y + GetDifference())
-                _bg.position = new Vector2(_bg.position.x, _bg.position.y - GetStep());
-
+            if(_player != null)
+            {
+                if (_bg.position.x < _player.position.x - GetDifference())
+                    _bg.position = new Vector2(_bg.position.x + GetStep(), _bg.position.y);
+                if (_bg.position.x > _player.position.x + GetDifference())
+                    _bg.position = new Vector2(_bg.position.x - GetStep(), _bg.position.y);
+                if (_bg.position.y < _player.position.y - GetDifference())
+                    _bg.position = new Vector2(_bg.position.x, _bg.position.y + GetStep());
+                if (_bg.position.y > _player.position.y + GetDifference())
+                    _bg.position = new Vector2(_bg.position.x, _bg.position.y - GetStep());
+            }
         }
     }
 

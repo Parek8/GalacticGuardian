@@ -41,31 +41,42 @@ public class EnemyMovement : MonoBehaviour
 
     private void RotateToTarget()
     {
-        _dir = _pTransform.position - transform.position;
-        _dot = Vector2.Dot(transform.up, _dir.normalized);
-        float angle = Vector2.Angle(transform.up, _dir * _stats.RotationSpeed);
-        Vector3 rotAxis = Vector3.Cross(transform.up, _dir);
-
-        int cw = 1;
-
-        if( rotAxis.z < 0)
+        if (_pTransform != null)
         {
-            cw = -1;
+            _dir = _pTransform.position - transform.position;
+            _dot = Vector2.Dot(transform.up, _dir.normalized);
+            float angle = Vector2.Angle(transform.up, _dir * _stats.RotationSpeed);
+            Vector3 rotAxis = Vector3.Cross(transform.up, _dir);
+
+            int cw = 1;
+
+            if (rotAxis.z < 0)
+            {
+                cw = -1;
+            }
+            if (_dot > 0.38f && _dot <= 1 && _dir.magnitude < _visibleDistance)
+            {
+                transform.Rotate(0, 0, angle * cw * _stats.RotationSpeed);
+            }
         }
-        if(_dot > 0.38f && _dot <= 1 && _dir.magnitude < _visibleDistance)
+        else
         {
-            transform.Rotate(0, 0, angle * cw * _stats.RotationSpeed);
+            Destroy(gameObject);
         }
     }
 
     private void MoveToTarget()
     {
-        if (_dot > 0.38f && Vector2.Distance(transform.position, _pTransform.position) < _visibleDistance && Vector2.Distance(transform.position, _pTransform.position) > 1f)
+        if(_pTransform != null)
         {
-            _agro = _dot >= 0.91;
-            transform.position = Vector2.MoveTowards(transform.position, _pTransform.position, Time.deltaTime * _stats.MovementSpeed * Time.deltaTime);
+            if (_dot > 0.38f && Vector2.Distance(transform.position, _pTransform.position) < _visibleDistance && Vector2.Distance(transform.position, _pTransform.position) > 1f)
+            {
+                _agro = _dot >= 0.91;
+                transform.position = Vector2.MoveTowards(transform.position, _pTransform.position, Time.deltaTime * _stats.MovementSpeed * Time.deltaTime);
+            }
+            else
+                _agro = false;
         }
-        else
-            _agro = false;
+        
     }
 }
