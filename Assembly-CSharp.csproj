@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\GameOver\GameOverMenu.cs" />
     <Compile Include="Assets\Scripts\Entities\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Managers\TutorialManager.cs" />
+    <Compile Include="Assets\Scripts\DestroyOnTime.cs" />
     <Compile Include="Assets\Scripts\Entities\PlayerStats.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Loading\LoadingHandler.cs" />

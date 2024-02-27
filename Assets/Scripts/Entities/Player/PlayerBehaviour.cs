@@ -67,7 +67,7 @@ internal class PlayerBehaviour : MonoBehaviour
 
     private void Shoot()
     {
-        GameObject _bullet = Instantiate(BulletPrefab, BulletSpawnPoint.position, Quaternion.identity);
+        GameObject _bullet = Instantiate(BulletPrefab, BulletSpawnPoint.position, transform.rotation * Quaternion.Euler(0, 0, 90));
         _bullet.GetComponent<Rigidbody2D>().AddForce(BulletSpawnPoint.up * _bullet.GetComponent<ProjectileBehavior>().ShootSpeed);
 
         _currentShootCooldown = _maxShootCooldown;
