@@ -29,12 +29,34 @@ public class Card : MonoBehaviour
     void Start()
     {
         _pStats = GameManager.GameManagerInstance.GetComponent<EntityStats>();
-        _amount = UnityEngine.Random.Range(0.25f, 1.25f);
+        SetAmount();
+        SelectRandomType();
         _cardClick.onClick.AddListener(OnCardClick);
+        SetTitle();
+        ChangeTextBasedOnType();
     }
 
     void OnCardClick()
     {
         _pStats.IncreaseStat(_type, _amount);
+    }
+    void SetAmount()
+    {
+        _amount = UnityEngine.Random.Range(0.25f, 1.25f);
+        _amount = (float)Math.Round(_amount, 2);
+    }
+    void SetTitle()
+    {
+        _cardTitleElement.text = _type.ToString() + "++";
+    }
+    void SelectRandomType()
+    {
+        Array values = Enum.GetValues(typeof(StatType));
+        _type = (StatType)values.GetValue(UnityEngine.Random.Range(0, values.Length));
+        Debug.Log(_type.ToString());
+    }
+    void ChangeTextBasedOnType()
+    {
+        _cardTextElement.text = $"Increase the stat ({_type}) by {_amount}";
     }
 }

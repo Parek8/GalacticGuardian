@@ -496,5 +496,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cardClick: {fileID: 2489558080132656099}
-  _cardText: {fileID: 5371080423287907714}
-  _cardTitle: {fileID: 208569295937179487}
+  _cardTextElement: {fileID: 5371080423287907714}
+  _cardTitleElement: {fileID: 208569295937179487}
+  _cardText: 
+  _cardTitle: 
+  _type: 0
