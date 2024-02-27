@@ -1015,7 +1015,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BackgroundParent: {fileID: 660939653}
-  TileSize: 31
+  TileSize: 40
 --- !u!1 &788113675
 GameObject:
   m_ObjectHideFlags: 0
