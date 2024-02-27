@@ -100,7 +100,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28f4291df55cb9a4aa23931a2d50ac3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <ShootSpeed>k__BackingField: 100
+  <ShootSpeed>k__BackingField: 500
+  <ExplosionSystemPrefab>k__BackingField: {fileID: 6108273603855258528, guid: abe9a04ccdedbd64090dc5f443c55a21, type: 3}
   DMG: 1
 --- !u!50 &2004674933565715311
 Rigidbody2D:

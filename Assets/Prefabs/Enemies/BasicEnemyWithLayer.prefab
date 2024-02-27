@@ -183,7 +183,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MovementSpeed>k__BackingField: 10
   <BoostMultiplier>k__BackingField: 5
-  <RotationSpeed>k__BackingField: 1.2
+  <RotationSpeed>k__BackingField: 0.5
   <AttackDamage>k__BackingField: 1
   <Defense>k__BackingField: 1
   <MaxHealthPoints>k__BackingField: 1
@@ -193,7 +193,7 @@ MonoBehaviour:
   - {fileID: 3633874271622342539, guid: e59017a413299b344bd8a74624575fc3, type: 3}
   - {fileID: 3633874271622342539, guid: e59017a413299b344bd8a74624575fc3, type: 3}
   - {fileID: 3633874271622342539, guid: e59017a413299b344bd8a74624575fc3, type: 3}
-  <ShootCooldown>k__BackingField: 1.5
+  <ShootCooldown>k__BackingField: 2
 --- !u!95 &4367735190412750735
 Animator:
   serializedVersion: 5
