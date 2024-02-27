@@ -1,10 +1,10 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System;
 
 [RequireComponent(typeof(Collider2D))]
 internal class EntityStats : MonoBehaviour, IDeathObserver
 {
-
     #region Stats
     [field: Header("Entity Parameters")]
     [field: SerializeField] internal float MovementSpeed {get; private set;} = 1; 
@@ -25,6 +25,9 @@ internal class EntityStats : MonoBehaviour, IDeathObserver
     #endregion
 
     float _currentHp;
+    internal float CurrentHP => _currentHp;
+    internal Action OnHPChange;
+
     bool _isBoosted = false;
     private void Start() 
     {
@@ -37,13 +40,16 @@ internal class EntityStats : MonoBehaviour, IDeathObserver
 
         if (_currentHp <= 0)
             Die();
+        OnHPChange?.Invoke();
     }
+
     void Heal(float amount)
     {
         if (_currentHp < MaxHealthPoints)
             _currentHp += amount;
 
         MaxHealthPoints += amount / 10;
+        OnHPChange?.Invoke();
     }
 
     internal void BoostMovementSpeed()
@@ -68,7 +74,7 @@ internal class EntityStats : MonoBehaviour, IDeathObserver
     {
         foreach (DropBehaviour _drop in DroppedCurrencies)
         {
-            if (Random.Range(0, 1f) >= _drop.DroppedCurrency.SpawnChance)
+            if (UnityEngine.Random.Range(0, 1f) >= _drop.DroppedCurrency.SpawnChance)
                 Instantiate(_drop.gameObject, transform.position, Quaternion.identity);
         }
 
