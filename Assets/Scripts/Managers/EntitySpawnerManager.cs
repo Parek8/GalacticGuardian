@@ -11,12 +11,14 @@ internal sealed class EntitySpawnerManager : MonoBehaviour
     {
         if (_entitySpawnerManagerInstance == null)
             _entitySpawnerManagerInstance = this;
+
+        StartNewWave();
     }
 
     public void StartNewWave()
     {
-        int _entityCount = Random.Range(2, 20);
-        float _range = Random.Range(5f, 10f);
+        int _entityCount = Random.Range(1, 10);
+        float _range = Random.Range(15f, 25f);
 
         for (int i = 0; i < _entityCount; i++)
         {

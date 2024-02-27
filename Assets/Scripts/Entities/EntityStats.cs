@@ -69,7 +69,7 @@ internal class EntityStats : MonoBehaviour, IDeathObserver
         foreach (DropBehaviour _drop in DroppedCurrencies)
         {
             if (Random.Range(0, 1f) >= _drop.DroppedCurrency.SpawnChance)
-                Instantiate(_drop.gameObject);
+                Instantiate(_drop.gameObject, transform.position, Quaternion.identity);
         }
 
         ((IDeathObserver)this).Alert();
