@@ -25,7 +25,7 @@ public class EnemyMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(_pTransform == null)
+        if (_pTransform == null)
             _pTransform = GameManager.GameManagerInstance.PlayerTransform;
 
         _stats = gameObject.GetComponent<EntityStats>();
@@ -54,10 +54,10 @@ public class EnemyMovement : MonoBehaviour
             {
                 cw = -1;
             }
-            if (_dot > 0.38f && _dot <= 1 && _dir.magnitude < _visibleDistance)
-            {
-                transform.Rotate(0, 0, angle * cw * _stats.RotationSpeed);
-            }
+            //if (_dot > 0.38f && _dot <= 1 && _dir.magnitude < _visibleDistance)
+            //{
+            transform.Rotate(0, 0, angle * cw * _stats.RotationSpeed);
+            //}
         }
         else
         {
@@ -67,16 +67,15 @@ public class EnemyMovement : MonoBehaviour
 
     private void MoveToTarget()
     {
-        if(_pTransform != null)
+        if (_pTransform != null)
         {
-            if (_dot > 0.38f && Vector2.Distance(transform.position, _pTransform.position) < _visibleDistance && Vector2.Distance(transform.position, _pTransform.position) > 1f)
+            if (/*_dot > 0.38f && Vector2.Distance(transform.position, _pTransform.position) < _visibleDistance && */ Vector2.Distance(transform.position, _pTransform.position) > 1f)
             {
-                _agro = _dot >= 0.91;
+                _agro = (_dot >= 0.91 && Vector2.Distance(transform.position, _pTransform.position) < _visibleDistance);
                 transform.position = Vector2.MoveTowards(transform.position, _pTransform.position, Time.deltaTime * _stats.MovementSpeed * Time.deltaTime);
             }
             else
                 _agro = false;
         }
-        
     }
 }
