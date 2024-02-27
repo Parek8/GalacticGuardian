@@ -31,14 +31,15 @@ public class Card : MonoBehaviour
         _pStats = GameManager.GameManagerInstance.PlayerStats;
         SetAmount();
         SelectRandomType();
-        _cardClick.onClick.AddListener(OnCardClick);
         SetTitle();
         ChangeTextBasedOnType();
+        
     }
 
-    void OnCardClick()
+    public void OnCardClick()
     {
         _pStats.IncreaseStat(_type, _amount);
+        
     }
     void SetAmount()
     {

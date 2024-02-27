@@ -18,6 +18,7 @@ public class DropBehaviour : MonoBehaviour
         if (Vector2.Distance(transform.position, _playerTransform.position) <= 0.3f)
         {
             GameManager.GameManagerInstance.PlayerStats.PickUpCopper();
+            GameManager.GameManagerInstance.CheckIfPlayerCanUpgrade();
             Destroy(gameObject);
         }
     }

@@ -16,6 +16,7 @@ internal class EntityStats : MonoBehaviour, IDeathObserver
     [field: SerializeField] public float MinimalDamageTaken {get; protected set;} = 1;
     [field: SerializeField] public List<DropBehaviour> DroppedCurrencies { get; protected set; } = new();
 
+
     [field: Header("Shoot Parameters")]
     [field: SerializeField] internal float ShootCooldown {get; private set;} = 1;
     #endregion
@@ -84,7 +85,7 @@ internal class EntityStats : MonoBehaviour, IDeathObserver
         Destroy(gameObject);
     }
 
-    internal void IncreaseStat(StatType type, float value)
+    internal virtual void IncreaseStat(StatType type, float value)
     {
         switch (type)
         {

@@ -20,7 +20,15 @@ public class CardUI : MonoBehaviour
     private void Start()
     {
         _pStats = GameManager.GameManagerInstance.PlayerTransform.GetComponent<EntityStats>();
-        InstantiateCards();
+        RerollCards();
+    }
+    private void OnEnable()
+    {
+        Time.timeScale = 0;
+    }
+    private void OnDisable()
+    {
+        Time.timeScale = 1;
     }
     public void RerollCards()
     {
