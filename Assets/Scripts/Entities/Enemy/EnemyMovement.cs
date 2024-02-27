@@ -8,6 +8,7 @@ public class EnemyMovement : MonoBehaviour
 {
     [Tooltip("Transform representing the target.\nDefaults to the players' transform.")]
     [field: SerializeField] Transform _pTransform;
+    [field: SerializeField] float _agroDistance;
     internal bool Agro => _agro;
     Vector2 _dir = Vector2.zero;
     EntityStats _stats;
@@ -64,5 +65,7 @@ public class EnemyMovement : MonoBehaviour
             _agro = _dot >= 0.91;
             transform.position = Vector2.MoveTowards(transform.position, _pTransform.position, Time.deltaTime * _stats.MovementSpeed * Time.deltaTime);
         }
+        else
+            _agro = false;
     }
 }

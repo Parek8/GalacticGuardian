@@ -22,10 +22,6 @@ internal sealed class TutorialManager : MonoBehaviour
             UpdateCircleFillAmount();
         else
             Loader.Load("Overworld");
-        
-        if (PlayerTransform.position.x > MapRadius.x || PlayerTransform.position.x < -MapRadius.x || PlayerTransform.position.y > MapRadius.y || PlayerTransform.position.y < -MapRadius.y)
-            PlayerTransform.position = Vector3.zero;
-
     }
 
     private void UpdateCircleFillAmount()
