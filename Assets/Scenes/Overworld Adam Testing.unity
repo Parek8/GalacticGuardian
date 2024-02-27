@@ -340,18 +340,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
-    - target: {fileID: 7465130212431094851, guid: 907569cbd15a3674e93ebee408bf77f7, type: 3}
-      propertyPath: m_RenderMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7465130212431094851, guid: 907569cbd15a3674e93ebee408bf77f7, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 1058599387
-      objectReference: {fileID: 0}
-    - target: {fileID: 8201693282190459663, guid: 907569cbd15a3674e93ebee408bf77f7, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1279,6 +1267,7 @@ MonoBehaviour:
   PlayerTransform: {fileID: 1512754905}
   PlayerStats: {fileID: 1898906965}
   upgradeMenu: {fileID: 1388591624}
+  GameOverMenu: {fileID: 0}
 --- !u!1 &854825040
 GameObject:
   m_ObjectHideFlags: 0

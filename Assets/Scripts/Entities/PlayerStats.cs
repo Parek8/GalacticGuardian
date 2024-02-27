@@ -27,8 +27,7 @@ internal class PlayerStats : EntityStats, ISubscriber
     protected override void Die()
     {
         ((IDeathObserver)this).Alert();
-        Destroy(gameObject);
-        Time.timeScale = 0;
         GameManager.GameManagerInstance.EnableGameOver();
+        Destroy(gameObject);
     }
 }

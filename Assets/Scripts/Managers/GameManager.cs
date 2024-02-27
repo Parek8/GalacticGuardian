@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 internal sealed class GameManager : MonoBehaviour
@@ -8,8 +9,9 @@ internal sealed class GameManager : MonoBehaviour
     [field: SerializeField] internal Transform PlayerTransform;
     [field: SerializeField] internal PlayerStats PlayerStats;
     
-    [field: SerializeField] internal GameObject upgradeMenu;
+    [field: SerializeField] internal GameObject UpgradeMenu;
     [field: SerializeField] internal GameObject GameOverMenu;
+    [field: SerializeField] internal List<GameObject> HUD;
     private void Awake()
     {
         if (_gameManagerInstance == null)
@@ -18,18 +20,29 @@ internal sealed class GameManager : MonoBehaviour
 
     public void CheckIfPlayerCanUpgrade()
     {
-        if(PlayerStats.CopperCount >= PlayerStats.CopperNeededForUpgrade && upgradeMenu.active == false)
+        if(PlayerStats.CopperCount >= PlayerStats.CopperNeededForUpgrade && !UpgradeMenu.activeInHierarchy)
         {
-            upgradeMenu.SetActive(true);
-            upgradeMenu.GetComponent<CardUI>().RerollCards();
+            SetHUDActive(false);
+            UpgradeMenu.SetActive(true);
+            UpgradeMenu.GetComponent<CardUI>().RerollCards();
         }
     }
+
+    void SetHUDActive(bool active)
+    {
+        foreach (GameObject _HUD in HUD)
+            _HUD.SetActive(active);
+    }
+
     public void DisableUpgradeUi()
     {
-        upgradeMenu.SetActive(false);
+        SetHUDActive(true);
+        UpgradeMenu.SetActive(false);
     }
     public void EnableGameOver()
     {
         GameOverMenu.SetActive(true);
+        SetHUDActive(false);
+        Time.timeScale = 0;
     }
 }
