@@ -6,8 +6,6 @@ internal sealed class TutorialManager : MonoBehaviour
     [field: SerializeField] Image FilledCircle;
     [field: SerializeField] float CircleFillLimit;
     [field: SerializeField] LoadingHandler Loader;
-    [field: SerializeField] internal Transform PlayerTransform { get; private set; }
-    [field: SerializeField] internal Vector2 MapRadius { get; private set; }
 
     float _filledAmount;
     private void FixedUpdate()

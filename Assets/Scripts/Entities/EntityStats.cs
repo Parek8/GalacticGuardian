@@ -75,6 +75,7 @@ internal class EntityStats : MonoBehaviour, IDeathObserver
 
     protected virtual void Die()
     {
+        GameManager.GameManagerInstance.PlaySound(GameManager.GameManagerInstance.RandomBlowAudio);
         foreach (DropBehaviour _drop in DroppedCurrencies)
         {
             if (UnityEngine.Random.Range(0, 1f) >= _drop.DroppedCurrency.SpawnChance)

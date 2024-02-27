@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(EnemyMovement))]
@@ -8,6 +6,10 @@ public class EnemyBehaviour : MonoBehaviour
 {
     [field: SerializeField] internal GameObject BulletPrefab { get; private set;}
     [field: SerializeField] internal Transform BulletSpawnPoint { get; private set;}
+
+    [field: Header("Audio")]
+    [field: SerializeField] private AudioSource ShootSound;
+
     EntityStats _enemyStats;
     EnemyMovement _enemyMovement;
 
@@ -30,6 +32,7 @@ public class EnemyBehaviour : MonoBehaviour
         GameObject _bullet = Instantiate(BulletPrefab, BulletSpawnPoint.position, transform.rotation * Quaternion.Euler(0, 0, 90));
         _bullet.GetComponent<Rigidbody2D>().AddForce(BulletSpawnPoint.up * _bullet.GetComponent<ProjectileBehavior>().ShootSpeed);
 
+        GameManager.GameManagerInstance.PlaySound(GameManager.GameManagerInstance.ShootAudio);
         _currentShootCooldown = _enemyStats.ShootCooldown;
     }
 }

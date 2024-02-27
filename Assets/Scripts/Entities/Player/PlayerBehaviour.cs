@@ -14,7 +14,6 @@ internal class PlayerBehaviour : MonoBehaviour
     [field: SerializeField] private Image RedHPImage;
     [field: SerializeField] private TMP_Text CopperText;
 
-
     PlayerStats _playerStats;
     float _currentShootCooldown;
     float _maxShootCooldown;
@@ -70,6 +69,7 @@ internal class PlayerBehaviour : MonoBehaviour
         GameObject _bullet = Instantiate(BulletPrefab, BulletSpawnPoint.position, transform.rotation * Quaternion.Euler(0, 0, 90));
         _bullet.GetComponent<Rigidbody2D>().AddForce(BulletSpawnPoint.up * _bullet.GetComponent<ProjectileBehavior>().ShootSpeed);
 
+        GameManager.GameManagerInstance.PlaySound(GameManager.GameManagerInstance.ShootAudio);
         _currentShootCooldown = _maxShootCooldown;
     }
 }

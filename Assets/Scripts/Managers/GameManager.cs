@@ -12,10 +12,21 @@ internal sealed class GameManager : MonoBehaviour
     [field: SerializeField] internal GameObject UpgradeMenu;
     [field: SerializeField] internal GameObject GameOverMenu;
     [field: SerializeField] internal List<GameObject> HUD;
+    [field: SerializeField] internal AudioSource BackgroundAudio;
+    [field: SerializeField] internal AudioSource ShootAudio;
+    [field: SerializeField] internal List<AudioSource> BlowAudioList;
+    [field: SerializeField] internal AudioSource RandomBlowAudio => BlowAudioList[UnityEngine.Random.Range(0, BlowAudioList.Count)];
+    [field: SerializeField] internal AudioSource FlyingAudio;
+
     private void Awake()
     {
         if (_gameManagerInstance == null)
             _gameManagerInstance = this;
+    }
+
+    private void Start()
+    {
+        PlaySound(BackgroundAudio);    
     }
 
     public void CheckIfPlayerCanUpgrade()
@@ -44,5 +55,10 @@ internal sealed class GameManager : MonoBehaviour
         GameOverMenu.SetActive(true);
         SetHUDActive(false);
         Time.timeScale = 0;
+    }
+
+    internal void PlaySound(AudioSource sound)
+    {
+        sound.Play();
     }
 }
