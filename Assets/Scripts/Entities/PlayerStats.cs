@@ -10,4 +10,10 @@ internal class PlayerStats : EntityStats, ISubscriber
     internal void PickUpCopper() => this.CopperCount++;
 
     internal void RemoveCopper() => this.CopperCount--;
+
+    protected override void Die()
+    {
+        ((IDeathObserver)this).Alert();
+        Destroy(gameObject);
+    }
 }

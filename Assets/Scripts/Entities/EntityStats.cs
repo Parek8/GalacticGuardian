@@ -70,7 +70,7 @@ internal class EntityStats : MonoBehaviour, IDeathObserver
         }
     }
 
-    private void Die()
+    protected virtual void Die()
     {
         foreach (DropBehaviour _drop in DroppedCurrencies)
         {
