@@ -1932,7 +1932,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
+  m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -3849,8 +3849,8 @@ PrefabInstance:
       value: Blackhole
       objectReference: {fileID: 0}
     - target: {fileID: 2262606733945498699, guid: af6ec9193183cff4c9e300b96e89343b, type: 3}
-      propertyPath: m_Layer
-      value: 8
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3571780404424556187, guid: af6ec9193183cff4c9e300b96e89343b, type: 3}
       propertyPath: m_LocalPosition.x

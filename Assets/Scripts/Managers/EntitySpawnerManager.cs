@@ -12,7 +12,7 @@ internal sealed class EntitySpawnerManager : MonoBehaviour
     private static EntitySpawnerManager _entitySpawnerManagerInstance;
 
     int _waveCount = 0;
-
+    internal int WaveCount => _waveCount;
     private void Awake()
     {
         if (_entitySpawnerManagerInstance == null)

@@ -7,14 +7,14 @@ internal class EntityStats : MonoBehaviour, IDeathObserver
 {
     #region Stats
     [field: Header("Entity Parameters")]
-    [field: SerializeField] internal float MovementSpeed {get; private set;} = 1; 
-    [field: SerializeField] internal float BoostMultiplier {get; private set;} = 5; 
-    [field: SerializeField] internal float RotationSpeed {get; private set;} = 1;
-    [field: SerializeField] internal float AttackDamage {get; private set;} = 1;
-    [field: SerializeField] internal float Defense {get; private set;} = 1;
-    [field: SerializeField] internal float MaxHealthPoints {get; private set;} = 1;
-    [field: SerializeField] internal float MinimalDamageTaken {get; private set;} = 1;
-    [field: SerializeField] internal List<DropBehaviour> DroppedCurrencies { get; private set; } = new();
+    [field: SerializeField] public float MovementSpeed {get; protected set;} = 1; 
+    [field: SerializeField] public float BoostMultiplier {get; protected set;} = 5; 
+    [field: SerializeField] public float RotationSpeed {get; protected set;} = 1;
+    [field: SerializeField] public float AttackDamage {get; protected set;} = 1;
+    [field: SerializeField] public float Defense {get; protected set;} = 1;
+    [field: SerializeField] public float MaxHealthPoints {get; protected set;} = 1;
+    [field: SerializeField] public float MinimalDamageTaken {get; protected set;} = 1;
+    [field: SerializeField] public List<DropBehaviour> DroppedCurrencies { get; protected set; } = new();
 
     [field: Header("Shoot Parameters")]
     [field: SerializeField] internal float ShootCooldown {get; private set;} = 1;
@@ -57,6 +57,7 @@ internal class EntityStats : MonoBehaviour, IDeathObserver
         if (!_isBoosted)
         {
             MovementSpeed *= BoostMultiplier;
+            RotationSpeed *= BoostMultiplier;
             _isBoosted = true;    
         }
     }
@@ -66,6 +67,7 @@ internal class EntityStats : MonoBehaviour, IDeathObserver
         if (_isBoosted)
         {
             MovementSpeed /= BoostMultiplier;
+            RotationSpeed /= BoostMultiplier;
             _isBoosted = false;
         }
     }
