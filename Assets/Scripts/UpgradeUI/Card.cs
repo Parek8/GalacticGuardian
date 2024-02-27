@@ -28,7 +28,7 @@ public class Card : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _pStats = GameManager.GameManagerInstance.GetComponent<EntityStats>();
+        _pStats = GameManager.GameManagerInstance.PlayerStats;
         SetAmount();
         SelectRandomType();
         _cardClick.onClick.AddListener(OnCardClick);
