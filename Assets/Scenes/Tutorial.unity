@@ -184,7 +184,7 @@ GameObject:
   - component: {fileID: 395845322}
   - component: {fileID: 395845321}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Content
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -198,7 +198,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 395845319}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1.3625325}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -206,7 +206,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -396}
+  m_AnchoredPosition: {x: 0, y: -565.6}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &395845321
@@ -229,13 +229,24 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Use [W]/[S] | [Up]/[Down] to move!
+  m_text: 'Press <color="red">[W]</color="red">/<color="red">[S]</color="red"> |
+    <color="red">[Up]</color="red">/<color="red">[Down]</color="red"> to <color="green">move</color="green">!
 
-    Use [Space] to shoot!
+    Press
+    <color="red">[Space]</color="red"> to <color="green">shoot</color="green">!
+
+    Press
+    <color="red">[Left Shift]</color="red"> to <color="green">boost</color="green">!
 
 
     By
-    landing on planet you can upgrade your stats!
+    collecting enough <color="orange">copper</color="orange">, you can upgrade your
+    stats!
+
+
+    You can''t win this game.
+
+    Enemies spawn repeatedly in waves.
 
 '
   m_isRightToLeft: 0
@@ -390,7 +401,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
+  m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -483,14 +494,14 @@ RectTransform:
   m_GameObject: {fileID: 981843206}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2634784, y: 2.03792, z: 2.03792}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 462718107}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 144, y: 251}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &981843208
@@ -641,7 +652,7 @@ GameObject:
   - component: {fileID: 1373086155}
   - component: {fileID: 1373086154}
   m_Layer: 5
-  m_Name: Message
+  m_Name: MessageToSkip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1262,7 +1273,7 @@ GameObject:
   - component: {fileID: 2071826868}
   - component: {fileID: 2071826867}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: Header
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1307,7 +1318,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: YOUR GOAL IS TO DESTROY THE ALL SUCKING BLACK HOLE!!!
+  m_text: YOUR GOAL IS TO SURVIVE!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
