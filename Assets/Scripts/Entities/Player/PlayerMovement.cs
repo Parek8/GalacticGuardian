@@ -4,6 +4,8 @@ using UnityEngine;
 [RequireComponent(typeof(EntityStats))]
 internal class PlayerMovement : MonoBehaviour
 {
+    [field: SerializeField] private Transform MinimapBackground;
+
     EntityStats _playerStats;
     private void Start()
     {
@@ -36,12 +38,14 @@ internal class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             transform.Rotate(new Vector3(0, 0, 1 * _playerStats.RotationSpeed));
+            MinimapBackground.Rotate(new Vector3(0, 0, -1 * _playerStats.RotationSpeed));
             GameManager.GameManagerInstance.FlyingAudio.volume = 1f;
         }
         // ROTATE RIGHT
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             transform.Rotate(new Vector3(0, 0, -1 * _playerStats.RotationSpeed));
+            MinimapBackground.Rotate(new Vector3(0, 0, 1 * _playerStats.RotationSpeed));
             GameManager.GameManagerInstance.FlyingAudio.volume = 1f;
         }
 
