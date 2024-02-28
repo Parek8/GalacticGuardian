@@ -340,7 +340,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &388153178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -362,7 +362,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 1898906958}
   m_Lens:
-    FieldOfView: 34
+    FieldOfView: 136.26553
     OrthographicSize: 5
     NearClipPlane: 0.3
     FarClipPlane: 1000
@@ -2210,8 +2210,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1352848597}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.4660296, y: 4.215435, z: 35.530247}
+  m_LocalRotation: {x: 0.13168682, y: -0.0065121185, z: 0.007982855, w: 0.9912379}
+  m_LocalPosition: {x: 0, y: 0, z: -500}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2280,19 +2280,19 @@ Camera:
   serializedVersion: 2
   m_ClearFlags: 2
   m_BackGroundColor: {r: 1, g: 1, b: 1, a: 1}
-  m_projectionMatrixMode: 2
+  m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
   m_Iso: 200
   m_ShutterSpeed: 0.005
   m_Aperture: 16
   m_FocusDistance: 10
-  m_FocalLength: 24.531395
+  m_FocalLength: 3.009999
   m_BladeCount: 5
   m_Curvature: {x: 2, y: 11}
   m_BarrelClipping: 0.25
   m_Anamorphism: 0
-  m_SensorSize: {x: 350, y: 15}
+  m_SensorSize: {x: 462.21, y: 15}
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -2300,11 +2300,11 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: -56.31
   far clip plane: 1000
-  field of view: 34
-  orthographic: 0
-  orthographic size: 5
+  field of view: 136.26553
+  orthographic: 1
+  orthographic size: 143.25
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -2327,7 +2327,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1352848597}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
   m_Name: 
@@ -3721,6 +3721,7 @@ MonoBehaviour:
   GreenHPImage: {fileID: 864417727}
   RedHPImage: {fileID: 1692845739}
   CopperText: {fileID: 1781479449}
+  MinimapCamera: {fileID: 1352848598}
 --- !u!61 &1898906962
 BoxCollider2D:
   m_ObjectHideFlags: 0

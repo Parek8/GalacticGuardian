@@ -13,6 +13,7 @@ internal class PlayerBehaviour : MonoBehaviour
     [field: SerializeField] private Image GreenHPImage;
     [field: SerializeField] private Image RedHPImage;
     [field: SerializeField] private TMP_Text CopperText;
+    [field: SerializeField] private Transform MinimapCamera;
 
     PlayerStats _playerStats;
     float _currentShootCooldown;
@@ -39,8 +40,10 @@ internal class PlayerBehaviour : MonoBehaviour
     {
         UpdateCooldown();
         UpdateCopperUI();
+        UpdateMinimapCameraPosition();
     }
-
+    
+    private void UpdateMinimapCameraPosition() => MinimapCamera.position = new Vector3(transform.position.x, transform.position.y, 0);
     private void UpdateCooldown()
     {
         _currentShootCooldown -= Time.deltaTime;
