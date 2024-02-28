@@ -31,7 +31,7 @@ internal sealed class EntitySpawnerManager : MonoBehaviour
             for (int i = 0; i < _entityCount; i++)
             {
                 float _angle = Random.Range(0, Mathf.PI * 2);
-                Instantiate(EnemyTemporaryPrefab, new Vector2((Mathf.Cos(_angle)), (Mathf.Sin(_angle))) * _range, Quaternion.identity);
+                Instantiate(EnemyTemporaryPrefab, (Vector2)GameManager.GameManagerInstance.PlayerTransform.position + (new Vector2((Mathf.Cos(_angle)), (Mathf.Sin(_angle))) * _range), Quaternion.identity);
             }
             _waveCount++;
             yield return new WaitForSeconds(Random.Range(MinWaveSpawnDelay, MaxWaveSpawnDelay));

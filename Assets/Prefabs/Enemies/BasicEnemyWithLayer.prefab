@@ -181,7 +181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d16caf9fc35893748b8870d09d149bdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <MovementSpeed>k__BackingField: 10
+  <MovementSpeed>k__BackingField: 2
   <BoostMultiplier>k__BackingField: 5
   <RotationSpeed>k__BackingField: 0.5
   <AttackDamage>k__BackingField: 1
