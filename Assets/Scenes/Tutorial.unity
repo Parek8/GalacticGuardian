@@ -696,7 +696,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hold [Enter] to skip
+  m_text: Hold <color="red">[Space]</color> to skip
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e21a46abd815f7e4d8d25519279adad5, type: 2}
   m_sharedMaterial: {fileID: 7661740856786877706, guid: e21a46abd815f7e4d8d25519279adad5, type: 2}

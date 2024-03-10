@@ -10,7 +10,7 @@ internal sealed class TutorialManager : MonoBehaviour
     float _filledAmount;
     private void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.KeypadEnter))
+        if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.KeypadEnter) || Input.GetKey(KeyCode.Escape))
             _filledAmount += Time.deltaTime;
         else
             _filledAmount = 0;
