@@ -8,7 +8,7 @@ internal class PlayerStats : EntityStats, ISubscriber
     internal float CopperNeededForUpgrade = 10f;
     void ISubscriber.Alert()
     {
-        throw new System.NotImplementedException();
+        Score++;
     }
     
     internal void PickUpCopper() => this.CopperCount++;
