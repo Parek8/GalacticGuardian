@@ -371,7 +371,7 @@ MonoBehaviour:
     LensShift: {x: 0, y: 0}
     GateFit: 2
     FocusDistance: 10
-    m_SensorSize: {x: 350, y: 15}
+    m_SensorSize: {x: 1, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2878,7 +2878,7 @@ MonoBehaviour:
     LensShift: {x: 0, y: 0}
     GateFit: 2
     FocusDistance: 10
-    m_SensorSize: {x: 350, y: 15}
+    m_SensorSize: {x: 1, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -3897,6 +3897,7 @@ MonoBehaviour:
   RedHPImage: {fileID: 1692845739}
   CopperText: {fileID: 1781479449}
   ScoreText: {fileID: 1871134802}
+  MinimapCamera: {fileID: 1352848598}
 --- !u!61 &1898906962
 BoxCollider2D:
   m_ObjectHideFlags: 0
