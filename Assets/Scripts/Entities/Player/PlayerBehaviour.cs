@@ -1,3 +1,4 @@
+﻿using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -13,11 +14,13 @@ internal class PlayerBehaviour : MonoBehaviour
     [field: SerializeField] private Image GreenHPImage;
     [field: SerializeField] private Image RedHPImage;
     [field: SerializeField] private TMP_Text CopperText;
+    [field: SerializeField] TMP_Text ScoreText;
     [field: SerializeField] private Transform MinimapCamera;
 
     PlayerStats _playerStats;
     float _currentShootCooldown;
     float _maxShootCooldown;
+    int _score;
 
     void Start()
     {
@@ -40,6 +43,12 @@ internal class PlayerBehaviour : MonoBehaviour
     {
         UpdateCooldown();
         UpdateCopperUI();
+        UpdateScoreUI();
+    }
+
+    private void UpdateScoreUI()
+    {
+        ScoreText.text = $"{_playerStats.Score}";
         UpdateMinimapCameraPosition();
     }
     
