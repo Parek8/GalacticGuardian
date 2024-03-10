@@ -1,10 +1,11 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
+
 
 internal sealed class EntitySpawnerManager : MonoBehaviour
 {
-    [field: SerializeField] GameObject EnemyTemporaryPrefab;
+    [field: SerializeField] List<GameObject> EnemyTemporaryPrefabs;
     [field: SerializeField] float MinWaveSpawnDelay;
     [field: SerializeField] float MaxWaveSpawnDelay;
 
@@ -25,13 +26,13 @@ internal sealed class EntitySpawnerManager : MonoBehaviour
     {
         while (true)
         {
-            int _entityCount = Random.Range(1, 10);
+            int _entityCount = Random.Range(5, 20);
             float _range = Random.Range(15f, 25f);
 
             for (int i = 0; i < _entityCount; i++)
             {
                 float _angle = Random.Range(0, Mathf.PI * 2);
-                Instantiate(EnemyTemporaryPrefab, (Vector2)GameManager.GameManagerInstance.PlayerTransform.position + (new Vector2((Mathf.Cos(_angle)), (Mathf.Sin(_angle))) * _range), Quaternion.identity);
+                Instantiate(EnemyTemporaryPrefabs[UnityEngine.Random.Range(0, EnemyTemporaryPrefabs.Count)], (Vector2)GameManager.GameManagerInstance.PlayerTransform.position + (new Vector2((Mathf.Cos(_angle)), (Mathf.Sin(_angle))) * _range), Quaternion.identity);
             }
             _waveCount++;
             yield return new WaitForSeconds(Random.Range(MinWaveSpawnDelay, MaxWaveSpawnDelay));

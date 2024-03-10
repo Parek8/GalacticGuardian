@@ -104,7 +104,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1201647502, guid: a2664752d6552a062ae4f1b302436550, type: 3}
+  m_Sprite: {fileID: -1103901777, guid: a2664752d6552a062ae4f1b302436550, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 6720256813485491370}
   - component: {fileID: 3564842130201392816}
   m_Layer: 6
-  m_Name: BasicEnemyWithLayer
+  m_Name: FastEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -181,10 +181,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d16caf9fc35893748b8870d09d149bdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <MovementSpeed>k__BackingField: 2
+  <MovementSpeed>k__BackingField: 5
   <BoostMultiplier>k__BackingField: 5
   <RotationSpeed>k__BackingField: 0.5
-  <AttackDamage>k__BackingField: 1
+  <AttackDamage>k__BackingField: 0.5
   <Defense>k__BackingField: 1
   <MaxHealthPoints>k__BackingField: 1
   <MinimalDamageTaken>k__BackingField: 1
@@ -193,7 +193,7 @@ MonoBehaviour:
   - {fileID: 3633874271622342539, guid: e59017a413299b344bd8a74624575fc3, type: 3}
   - {fileID: 3633874271622342539, guid: e59017a413299b344bd8a74624575fc3, type: 3}
   - {fileID: 3633874271622342539, guid: e59017a413299b344bd8a74624575fc3, type: 3}
-  <ShootCooldown>k__BackingField: 2
+  <ShootCooldown>k__BackingField: 1.2
 --- !u!95 &4367735190412750735
 Animator:
   serializedVersion: 5
@@ -204,7 +204,7 @@ Animator:
   m_GameObject: {fileID: 9023765922036679344}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 43a4b8d52fed93428b901428e285d921, type: 2}
+  m_Controller: {fileID: 9100000, guid: afec0167c2b6db047b75423ebb355162, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -272,7 +272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3383f1ec995444146a122373d879b8f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <BulletPrefab>k__BackingField: {fileID: 8470326358687384243, guid: 2ad9b9fe1c9c9d6449afcc2a5ec47d70, type: 3}
+  <BulletPrefab>k__BackingField: {fileID: 8470326358687384243, guid: 9fc6713f71c6a694bb55afbdc97c11b7, type: 3}
   <BulletSpawnPoint>k__BackingField: {fileID: 2652916422452125374}
   ShootSound: {fileID: 69255384956724152, guid: 5ddcfb7df86172f40b510af6e6a5ad81, type: 3}
 --- !u!1001 &3168372588297793708
