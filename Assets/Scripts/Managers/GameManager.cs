@@ -17,6 +17,7 @@ internal sealed class GameManager : MonoBehaviour
     [field: SerializeField] internal List<AudioSource> BlowAudioList;
     [field: SerializeField] internal AudioSource RandomBlowAudio => BlowAudioList[UnityEngine.Random.Range(0, BlowAudioList.Count)];
     [field: SerializeField] internal AudioSource FlyingAudio;
+    [field: SerializeField] internal AudioListener PlayerAudioListener;
 
     private void Awake()
     {
@@ -52,6 +53,7 @@ internal sealed class GameManager : MonoBehaviour
     }
     public void EnableGameOver()
     {
+        StopSounds();
         GameOverMenu.SetActive(true);
         SetHUDActive(false);
         Time.timeScale = 0;
@@ -61,4 +63,5 @@ internal sealed class GameManager : MonoBehaviour
     {
         sound.Play();
     }
+    internal void StopSounds() => PlayerAudioListener.gameObject.SetActive(false);
 }
