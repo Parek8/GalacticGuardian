@@ -33,8 +33,6 @@ internal class EntityStats : MonoBehaviour, IDeathObserver
     private void Start() 
     {
         _currentHp = MaxHealthPoints;
-        //This is awful and i hate myself for all of it, but Douda wanted this so...
-        ((IDeathObserver)this).Subscribe(GameManager.GameManagerInstance.PlayerStats);
     }
 
     internal void TakeDamage(float takenDamage)
