@@ -167,7 +167,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pTransform: {fileID: 0}
-  _agroDistance: 0
   _visibleDistance: 10
 --- !u!114 &5495550146241255557
 MonoBehaviour:
