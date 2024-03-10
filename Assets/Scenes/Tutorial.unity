@@ -170,8 +170,6 @@ MonoBehaviour:
   FilledCircle: {fileID: 2005070426}
   CircleFillLimit: 1.5
   Loader: {fileID: 2013449455}
-  <PlayerTransform>k__BackingField: {fileID: 0}
-  <MapRadius>k__BackingField: {x: 46, y: 46}
 --- !u!1 &395845319
 GameObject:
   m_ObjectHideFlags: 0
@@ -250,8 +248,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e21a46abd815f7e4d8d25519279adad5, type: 2}
+  m_sharedMaterial: {fileID: 7661740856786877706, guid: e21a46abd815f7e4d8d25519279adad5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -275,8 +273,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 66
+  m_fontSizeBase: 66
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -464,7 +462,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 4.0000305, y: 0}
+  m_AnchoredPosition: {x: 123, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!1 &981843206
@@ -675,7 +673,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 774, y: -470.3}
+  m_AnchoredPosition: {x: 642.1, y: -470.3}
   m_SizeDelta: {x: 464.82, y: 153.897}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1373086154
@@ -700,8 +698,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Hold [Enter] to skip
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e21a46abd815f7e4d8d25519279adad5, type: 2}
+  m_sharedMaterial: {fileID: 7661740856786877706, guid: e21a46abd815f7e4d8d25519279adad5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -725,8 +723,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 54
+  m_fontSizeBase: 54
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1320,8 +1318,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: YOUR GOAL IS TO SURVIVE!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e21a46abd815f7e4d8d25519279adad5, type: 2}
+  m_sharedMaterial: {fileID: 7661740856786877706, guid: e21a46abd815f7e4d8d25519279adad5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1345,8 +1343,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 55
-  m_fontSizeBase: 55
+  m_fontSize: 70
+  m_fontSizeBase: 70
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
