@@ -63,5 +63,5 @@ internal sealed class GameManager : MonoBehaviour
     {
         sound.Play();
     }
-    internal void StopSounds() => PlayerAudioListener.gameObject.SetActive(false);
+    internal void StopSounds() => PlayerAudioListener.enabled = false;
 }

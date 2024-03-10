@@ -1182,6 +1182,7 @@ MonoBehaviour:
   - {fileID: 1226464651}
   - {fileID: 389995345}
   FlyingAudio: {fileID: 433923728}
+  PlayerAudioListener: {fileID: 519420029}
 --- !u!1 &854825040
 GameObject:
   m_ObjectHideFlags: 0

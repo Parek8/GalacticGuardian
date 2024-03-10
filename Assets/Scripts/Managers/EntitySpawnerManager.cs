@@ -26,7 +26,7 @@ internal sealed class EntitySpawnerManager : MonoBehaviour
     {
         while (true)
         {
-            int _entityCount = Random.Range(5, 20);
+            int _entityCount = Random.Range(2, 10);
             float _range = Random.Range(15f, 25f);
 
             for (int i = 0; i < _entityCount; i++)

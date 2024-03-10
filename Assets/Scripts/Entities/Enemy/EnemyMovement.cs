@@ -69,7 +69,6 @@ public class EnemyMovement : MonoBehaviour
         if (_pTransform != null)
         {
             _agro = (_dot >= 0.91 && Vector2.Distance(transform.position, _pTransform.position) < _visibleDistance);
-            Debug.Log($"{transform.name} {Vector2.Distance(transform.position, _pTransform.position)}");
             if (/*_dot > 0.38f && Vector2.Distance(transform.position, _pTransform.position) < _visibleDistance && */ Vector2.Distance(transform.position, _pTransform.position) > 4f)
                 transform.position = Vector2.MoveTowards(transform.position, _pTransform.position, _stats.MovementSpeed * Time.deltaTime);
         }

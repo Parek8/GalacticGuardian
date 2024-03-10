@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\DestroyOnTime.cs" />
     <Compile Include="Assets\Sci-Fi UI\Demo_Assets\scripts\GUI_Demo.cs" />
     <Compile Include="Assets\Scripts\Entities\PlayerStats.cs" />
+    <Compile Include="Assets\Scripts\Entities\Destroy.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Loading\LoadingHandler.cs" />
     <Compile Include="Assets\Scripts\Blackhole\BlackholeBehavior.cs" />
